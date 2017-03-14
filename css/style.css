@@ -1,0 +1,32 @@
+.currencyForma
+{
+	margin-top: 70px;
+}
+
+.submitBtn
+{
+	text-align: center;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0!important;
+	width: 100%;
+
+}
+
+h4
+{
+	margin-bottom: 50px;
+}
+
+.textbox
+{
+	margin-left: -12px !important;
+}
+
+.save
+{
+	margin-top: -50px !important;
+	margin-bottom: 50px !important;
+	margin-left: -12px !important;
+}

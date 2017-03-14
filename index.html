@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="currencyRates">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+     <meta property="og:type" content="website">
+      <meta property="og:title" content="CurrencyRates" />
+      <meta property="og:description" content="Currency Converter and Updater" />
+      <meta property="og:url" content="." />
+    <title>Currency Rates</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="angular/app.js"></script>
+    <script src="angular/currency-directives.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+
+   
+
+
+</head>
+
+<body ng-controller="CurrencyController as currencyCtrl">
+
+<navbar></navbar>
+
+<div>
+
+<currency-form></currency-form>
+<conversions></conversions>
+
+</div>
+
+</body>
+
+
+</html>
+
+
+
