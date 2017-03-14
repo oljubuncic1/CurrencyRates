@@ -31,6 +31,8 @@
 
     this.saveJSON = function () {
 
+      
+
     data = cur.conversionRates;
 
   

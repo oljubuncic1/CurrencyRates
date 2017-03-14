@@ -1,17 +1,20 @@
 <div class="row">
 <div class="col-xs-12 col-md-3 col-md-offset-4 currencyForma">
 <h4 ng-show="currencyCtrl.conversionKeys.length">Conversion rates for {{currencyCtrl.selectedItem}}</h4>
-<a class="btn save" ng-click="currencyCtrl.saveJSON()" ng-href="{{ url }}">Save as JSON</a>
-<div ng-repeat="key in currencyCtrl.conversionKeys">
+
+<form name="conversionsForm"  novalidate>
+	<a class="btn save" ng-click="conversionsForm.$valid && currencyCtrl.saveJSON()" ng-href="{{ url }}">Save as JSON</a>
+	<div ng-repeat="key in currencyCtrl.conversionKeys">
   <fieldset class="form-group">
     <label>{{key}}</label>
   </fieldset>
 
   
   <fieldset class="form-group col-xs-12">
-    <input class="form-control textbox" type="text" ng-model="currencyCtrl.conversionRates[key]" />
+    <input class="form-control textbox" type="number" ng-model="currencyCtrl.conversionRates[key]" />
   </fieldset>
 </div>
+</form>
 
 </div>
 </div>
